@@ -1,0 +1,158 @@
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&display=swap");
+
+  body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(135deg, #2e0060, #150066);
+    font-family: "Mulish", sans-serif;
+    color: white;
+  }
+
+  .header-container {
+    background: linear-gradient(135deg, #2e0060, #150066);
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+
+  header .dept1-heading,
+  .dept2-heading {
+    padding: 20px 7px 0 0;
+    font-size: 55px;
+    font-weight: 800;
+    color: #ffffff;
+    text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,
+      0px 0px 20px #b393d3;
+  }
+
+  header .dept1-heading {
+    font-size: 25px;
+    text-shadow: 0px 0px 5px #87af1b, 0px 0px 10px #93d3a2, 0px 0px 10px #d3c993,
+      0px 0px 20px #b393d3;
+  }
+
+  .dept1-img {
+    height: 50px;
+  }
+
+  .event {
+    padding-top: 120px;
+    text-align: center;
+  }
+
+  .event-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .event-one,
+  .event-two {
+    padding: 20px;
+    border-radius: 20px;
+    justify-self: center;
+    align-self: center;
+    box-shadow: 0px 10px 30px 20px rgba(0, 0, 0, 0.35);
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .evt-pg-h {
+    color: #ffffff;
+    font-family: "Anton", sans-serif;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .evt-head {
+    color: #ffffff;
+    font-size: 1.5rem;
+  }
+
+  .uiux-img,
+  .dbg-img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    border: 2px solid gray;
+    border-radius: 20px;
+  }
+
+  .evt-org {
+    text-align: center;
+    background-color: #495057;
+    padding: 20px;
+    margin: 40px 0;
+    color: white;
+    font-family: "Outfit", sans-serif;
+    font-weight: 200;
+  }
+
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .dept2-heading {
+      font-size: 2rem;
+    }
+
+    .dept1-heading {
+      font-size: 1rem;
+    }
+
+    .event-container {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    .evt-pg-h {
+      font-size: 2rem;
+    }
+
+    .uiux-img,
+    .dbg-img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .header-container {
+      flex-direction: column;
+      padding-left: 0;
+      align-items: center;
+      text-align: center;
+    }
+
+    .dept2-heading {
+      font-size: 1.8rem;
+    }
+
+    .dept1-heading {
+      font-size: 1rem;
+    }
+
+    .event-one,
+    .event-two {
+      width: 100%;
+      padding: 15px;
+    }
+
+    .evt-pg-h {
+      font-size: 1.8rem;
+    }
+
+    .uiux-img,
+    .dbg-img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+  }
+</style>
